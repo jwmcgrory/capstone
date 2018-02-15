@@ -1,0 +1,342 @@
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Helvetica;
+  margin: 0;
+  color: DimGray;
+}
+
+/* HEADER SECTION */
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 0 1.5rem 0 1.5rem;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.logo span.colmar {
+  font-weight: bold;
+  color: black;
+}
+
+.logo span.academy {
+  color: silver;
+}
+
+.nav span {
+  padding-left: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: dimgray;
+  font-weight: bolder;
+  transition: all 0.1s linear;
+}
+
+.logo img {
+  height: 2rem;
+}
+
+.nav a:hover {
+  color: firebrick;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .header-bar {
+    display: none;
+  }
+
+header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+  }
+
+header .mobile li {
+    padding: 0;
+  }
+}
+
+/* BANNER SECTION */
+
+.banner {
+  display: flex;
+  background-color: silver;
+  align-items: center;
+}
+
+.banner-image {
+  padding: 2rem 1.5rem;
+  max-width: 60%;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-info h1 {
+  font-size: 2.5rem;
+  width: 75%;
+}
+
+.banner-info p {
+  font-size: 1.5rem;
+  width: 75%;
+}
+
+.button {
+  font-size: 1.2rem;
+  background-color: dimgray;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 760px) {
+  .banner {
+    display: block;
+  }
+
+  .banner-image {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .banner-info {
+    align-items: center;
+  }
+
+  .banner-info h1,
+  .banner-info p {
+    width: 90%;
+  }
+
+}
+
+/* main Section & thesis Section*/ 
+/*These two sections have similar formating and layout therefore grouped together */
+
+.main,
+.thesis {
+  display: flex;
+  background-color: white;
+  height: auto;
+}
+
+.main-left,
+.thesis-left {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid silver;
+}
+
+.main-left img,
+.thesis-left img {
+  width: 100%;
+}
+
+.main-left h1,
+.thesis-left h1 {
+  font-size: 2.5rem;
+}
+
+.main-right,
+.thesis-right {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+
+.main-right img,
+.thesis-right img {
+  width: 35%;
+  height: auto;
+  padding-right: 1rem;
+}
+
+.main-image,
+.thesis-image {
+  display: flex;
+  padding: 2rem 1rem;
+  align-items: center;
+}
+
+.main-image:last-child {
+  background-color: silver;
+}
+
+.main-image:first-child {
+  padding-top: 0;
+}
+
+.bottom-border {
+  border-bottom: 1px solid silver;
+  margin-bottom: 0.1rem;
+}
+
+.top-border {
+  border-top: 1px solid silver;
+}
+
+.main a {
+  text-decoration: none;
+  color: royalblue;
+}
+
+.main-image img:nth-child(2) {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-left {
+    display: none;
+  }
+
+  .main-image img:first-child {
+    display: none;
+  }
+
+  .main-image img:nth-child(2) {
+    display: block;
+  }
+
+  .main-image {
+    display: block;
+  }
+
+  .main-right {
+    display: block;
+    width: 100%;
+  }
+
+  .main-image img {
+    width: 100%;
+  }
+
+  .bottom-border {
+    border: none;
+  }
+
+  .top-border {
+    border: none;
+  }
+
+  .main-image:last-child {
+    background-color: white;
+  }
+
+}
+
+/* Learning Section */
+
+.header {
+ background-color: silver;
+ text-align: center;
+ color: dimgray;
+ padding-top: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.learning {
+  background-color: silver;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 4.5rem;
+  justify-content: center;
+}
+
+.learning-box {
+  background-color: white;
+  width: 22rem;
+  margin: 2rem 1rem 2rem 0;
+}
+
+.learning-box img {
+  width: 100%;
+}
+
+.learning-info {
+  padding: 1rem;
+}
+
+/* Unique thesis Section */
+
+#thesis-header {
+  background-color: white;
+}
+
+.thesis
+
+.thesis-left {
+  border: none;
+}
+
+.thesis-container {
+  background-color: white;
+}
+
+.thesis-image:first-child {
+  background-color: silver;
+}
+
+.thesis-image:last-child {
+  background-color: white;
+}
+
+/* footer Section */
+
+.footer {
+  border-top: 1px solid silver;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  padding-left: 1.5rem;
+}
+
+.terms-privacy span {
+  padding: 0 1rem;
+}
