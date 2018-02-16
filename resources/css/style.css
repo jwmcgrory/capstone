@@ -54,7 +54,7 @@ body {
   color: firebrick;
 }
 
-header .mobile {
+header .header-mobile {
   display: none;
 }
 
@@ -63,12 +63,12 @@ header .mobile {
     display: none;
   }
 
-header .mobile {
+header .header-mobile {
     display: block;
     width: 100%;
   }
 
-header .mobile ul {
+header .header-mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -77,7 +77,7 @@ header .mobile ul {
     padding: 0;
   }
 
-header .mobile li {
+header .header-header-mobile li {
     padding: 0;
   }
 }
@@ -143,10 +143,13 @@ header .mobile li {
     width: 90%;
   }
 
+  .button {
+    margin-bottom: 2rem;
+  }
 }
 
-/* main Section & thesis Section*/ 
-/*These two sections have similar formating and layout therefore grouped together */
+/* main Section & thesis Section*/
+/*These two sections have a similar layout therefore grouped together */
 
 .main,
 .thesis {
@@ -240,6 +243,8 @@ header .mobile li {
   .main-right {
     display: block;
     width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
 
   .main-image img {
@@ -266,7 +271,7 @@ header .mobile li {
  background-color: silver;
  text-align: center;
  color: dimgray;
- padding-top: 2rem;
+ padding: 2rem 0 2rem 0;
 }
 
 .header h1 {
@@ -286,7 +291,7 @@ header .mobile li {
 .learning-box {
   background-color: white;
   width: 22rem;
-  margin: 2rem 1rem 2rem 0;
+  margin: 0 1rem 2rem 0;
 }
 
 .learning-box img {
@@ -297,16 +302,44 @@ header .mobile li {
   padding: 1rem;
 }
 
+.learning-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .header {
+    background-color: white;
+  }
+
+  .learning-mobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .learning {
+    display: none;
+  }
+
+  .learning-mobile h2 {
+    padding: 1.5rem 0 1.5rem 1rem;
+    margin: 0 0 0.5rem 0;
+    background-color: silver;
+  }
+}
 /* Unique thesis Section */
 
 #thesis-header {
   background-color: white;
 }
 
-.thesis
+.thesis-right {
+  margin-top: 0;
+}
 
 .thesis-left {
   border: none;
+  padding-top: 0;
 }
 
 .thesis-container {
@@ -321,6 +354,21 @@ header .mobile li {
   background-color: white;
 }
 
+@media only screen and (max-width: 760px) {
+  .thesis-right {
+    display: none;
+  }
+
+  .thesis-left h3,
+  .thesis-left p {
+    display: none;
+  }
+
+  .thesis-left {
+    padding: 0 0 1.5rem 0;
+    max-width: 100%;
+  }
+}
 /* footer Section */
 
 .footer {
@@ -339,4 +387,10 @@ header .mobile li {
 
 .terms-privacy span {
   padding: 0 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .terms-privacy {
+    display: none;
+  }
 }
