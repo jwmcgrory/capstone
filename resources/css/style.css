@@ -50,25 +50,25 @@ body {
   height: 2rem;
 }
 
-.nav a:hover {
+nav a:hover {
   color: firebrick;
 }
 
-header .header-mobile {
+.header-mobile {
   display: none;
 }
 
 @media only screen and (max-width: 760px) {
-  header .header-bar {
+  .header-bar {
     display: none;
   }
 
-header .header-mobile {
+  .header-mobile {
     display: block;
     width: 100%;
   }
 
-header .header-mobile ul {
+ .header-mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -77,8 +77,12 @@ header .header-mobile ul {
     padding: 0;
   }
 
-header .header-header-mobile li {
-    padding: 0;
+  nav i {
+    color: black;
+  }
+
+  nav i:hover {
+    color: firebrick;
   }
 }
 
@@ -122,6 +126,15 @@ header .header-header-mobile li {
   text-align: center;
   padding: 0.5rem 0;
   font-weight: bold;
+}
+
+.button:hover {
+  background-color: firebrick;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
 }
 
 @media only screen and (max-width: 760px) {
@@ -214,7 +227,13 @@ header .header-header-mobile li {
   border-top: 1px solid silver;
 }
 
-.main a {
+.main-image a:hover,
+.thesis-image a:hover {
+  color: firebrick;
+}
+
+.main a,
+.thesis-image a {
   text-decoration: none;
   color: royalblue;
 }
@@ -371,7 +390,7 @@ header .header-header-mobile li {
 }
 /* footer Section */
 
-.footer {
+footer {
   border-top: 1px solid silver;
 }
 
