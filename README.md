@@ -1,5 +1,2 @@
 # capstone
-Codecadamy Capstone project
-responsive webpage
-accessability features
-font awesome icons
+Codecadamy Capstone project, responsive webpage, accessability features, font awesome icons
